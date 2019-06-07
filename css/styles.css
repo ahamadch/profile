@@ -541,7 +541,25 @@ footer {
     margin: 0 auto 30px auto;
     overflow: hidden;
     background: #fff;
-    border-radius: 4px
+    border-radius: 4px;
+    height: 180px;
+}
+
+.project-image-1 > img {
+    width: 155px;
+    height: 145px;
+}
+
+.project-image-2 > img {
+    width: 190px;
+    margin-top: 50px;
+    height: 75px;
+}
+
+.project-image-3 > img {
+    width: 100px;
+    margin-top: 50px;
+    height: 65px;
 }
 
 .project-image {
