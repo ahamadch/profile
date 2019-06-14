@@ -90,7 +90,7 @@
                 <h3>Axel Technologies Pvt Ltd</h3>
                 <h4>Software Engineer</h4>
                 <p>
-                    Worked closely with software development and testing team members to design and develop robust web solutions to meet client requirements for functionality, scalability and performance. My responsibilities included debugging and troubleshooting important
+                    Work closely with software development and testing team members to design and develop robust web solutions to meet client requirements for functionality, scalability and performance. My responsibilities include debugging and troubleshooting important
                     projects for clients, solving technical issues quickly and accurately with live support.
                 </p>
             </div>
@@ -99,7 +99,8 @@
                 <h3>Axel Technologies Pvt Ltd.</h3>
                 <h4>Intern</h4>
                 <p>
-                    Enhanced coding and web development skills during this period and started involving in developing important web applications in collaboration with senior developers. Acquired training in front-end web development essentials including responsive designs, integration of third-party applications within the projects and back-end development skills taking account of the MVC pattern.
+                    Enhanced coding and web development skills during this period and started involving in developing important web applications in collaboration with senior developers. Acquired training in front-end web development essentials including responsive designs,
+                    integration of third-party applications within the projects and back-end development skills taking account of the MVC pattern.
                 </p>
             </div>
 
@@ -135,13 +136,15 @@
             <div class="row">
                 <div class="project shadow-large">
                     <div class="col-xs-4 project-image  project-image-1">
-                        <img src="files/hvac-logo.png"/>
+                        <img src="files/hvac-logo.png" />
                     </div>
                     <!-- End .project-image -->
                     <div class="col-xs-8 project-info">
                         <h3>P3</h3>
-                        <p></p>
-                        <a href="http://www.pictureperfectpricing.com/p3">View Project</a>
+                        <p>This app is focused specifically on the every-day needs of heating and air conditioning contractors. The app provides HVAC Equipment Sales, Flat Rate Pricing, Service Agreement Management, Dispatching, Scheduling, Invoicing, Customer
+                            Management, On-Site Diagnostics and Timesheets all within one, easy-to-use program.
+                        </p>
+                        <!-- <a href="http://www.pictureperfectpricing.com/p3">View Project</a> -->
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -149,12 +152,12 @@
 
                 <div class="project shadow-large">
                     <div class="col-xs-4 project-image  project-image-2">
-                        <img src="files/rl-logo.png"/>
+                        <img src="files/rl-logo.png" />
                     </div>
                     <!-- End .project-image -->
                     <div class="col-xs-8 project-info">
                         <h3>Right Logistics</h3>
-                        <p></p>
+                        <p>Right Logistics Pvt. Ltd. is a privately owned Independent freight forwarder with the concept of providing our customers with a comprehensive partnership, to enhance every aspect of their Forwarding requirement. </p>
                         <a href="http://www.rightlogistics.com">View Project</a>
                     </div>
                     <!-- End .project-info -->
@@ -167,7 +170,9 @@
                     <!-- End .project-image -->
                     <div class="col-xs-8 project-info">
                         <h3>bluGate</h3>
-                        <p></p>
+                        <p>Blugate is an online app used to create virtual addresses to shop and deliver products which provides a full suite of retail logistics services, from warehousing and inventory management to order fulfilment to last-mile delivery.
+                            It uses a token system for Parcel Management which uses separate admin and user modules for processing. This application is implemented with Payment Gateway integration for Token Purchase, Map integration for bluPort locations
+                            and Admin module for managing Parcels, Plans and Promo Codes.</p>
                         <a href="http://blu.com.sg">View Project</a>
                     </div>
                     <!-- End .project-info -->
@@ -254,12 +259,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
     <script>
-        // $('#downloadBtn').on('mouseover', function() {
-        //     $(this).html('Coming Soon...')
-        // });
+        $('.vtimeline-content').on('mouseover', function() {
+            $(this).parent().find('.vtimeline-date').addClass('vtimeline-date-transform');
+            $(this).parent().parent().find('.vtimeline-icon').find('i').addClass('vtimeline-i-transform');
+        });
 
-        $('#downloadBtn').on('mouseout', function() {
-            $(this).html('Download Resume')
+        $('.vtimeline-content').on('mouseout', function() {
+            $(this).parent().find('.vtimeline-date').removeClass('vtimeline-date-transform');
+            $(this).parent().parent().find('.vtimeline-icon').find('i').removeClass('vtimeline-i-transform');
         });
     </script>
 </body>
