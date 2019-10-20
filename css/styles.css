@@ -12,7 +12,7 @@
 */
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     font-size: 16px
 }
 
@@ -78,12 +78,9 @@ header {
 
 header ul {
     display: inline-block;
-    background: #fff;
     text-align: center;
     padding: 10px;
     margin: 0;
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px
 }
 
 header li {
@@ -92,19 +89,17 @@ header li {
 
 header a {
     display: block;
-    color: #3498db;
-    padding: 10px
+    color: #fff;
+    padding: 15px
 }
 
 header a:hover {
-    color: #217dbb;
+    color: #798b97;
     text-decoration: none;
-    background: #eee;
-    border-radius: 4px
 }
 
 header a:focus {
-    color: #3498db;
+    color: #798b97;
     text-decoration: none
 }
 
@@ -127,7 +122,7 @@ header.sticky {
     position: fixed;
     right: 15px;
     top: 10px;
-    color: #3498db;
+    color: #798b97;
     font-size: 1.5em;
     z-index: 20;
     padding: 0 7px;
@@ -144,7 +139,7 @@ header.sticky {
     padding-right: 15px;
     padding-top: 10px;
     cursor: pointer;
-    color: #3498db
+    color: #798b97
 }
 
 #mobile-menu-close span {
@@ -177,10 +172,6 @@ footer {
     cursor: pointer;
     display: block;
     margin: 15px auto 0 auto;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    border: 3px solid #b9bfc4;
     text-align: center
 }
 
@@ -209,8 +200,37 @@ footer {
     padding: 10px
 }
 
-.social a:hover {
-    color: #3498db
+.social a i:hover {
+    color: #000;
+}
+
+.svg {
+    filter: saturate(0) brightness(0) invert(0);             
+}
+
+.invert {
+    filter: invert(0.5);             
+}
+
+.stack-item > img.svg:hover {
+    filter: saturate(1) brightness(1) invert(0);  
+}
+
+.stack-item img {
+    max-height: 50px;
+    margin-bottom: 30px;
+}
+
+.stack-item > h4 {
+    font-weight: lighter;
+}
+
+img {
+    max-width: 100%;
+}
+
+.stack-item {
+    margin-bottom: 50px;
 }
 
 .btn-rounded-white {
@@ -230,7 +250,7 @@ footer {
 }
 
 .btn-rounded-white:hover {
-    color: #3498db;
+    color: #000;
     background: #fff;
     text-decoration: none
 }
@@ -260,7 +280,7 @@ footer {
     left: 0;
     right: 0;
     margin: 0 auto;
-    background: #3498db
+    background: #798b97
 }
 
 .background-alt {
@@ -302,7 +322,7 @@ footer {
 }
 
 #lead-content h2 {
-    color: #a0cfee;
+    color: #798b97;
     font-weight: 500;
     font-size: 2.25em;
     margin-bottom: 15px
@@ -316,8 +336,16 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(33, 125, 187, 0.8);
+    background: rgba(0, 0, 0, 0.8);
     z-index: 1
+}
+
+.v-middle {
+    vertical-align: middle;
+}
+
+.f-25 {
+    font-size: 25px;
 }
 
 #lead-down {
@@ -335,14 +363,9 @@ footer {
     cursor: pointer;
     display: block;
     margin: 0 auto;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    border: 3px solid #a0cfee;
-    text-align: center
 }
 
-#lead-down i {
+#lead-down i, #to-top i {
     animation: pulsate 1.5s ease;
     animation-iteration-count: infinite;
     padding-top: 5px
@@ -399,7 +422,7 @@ footer {
     right: auto;
     height: 100%;
     width: 3px;
-    background: #3498db;
+    background: #798b97;
     z-index: 0
 }
 
@@ -408,8 +431,8 @@ footer {
     content: '';
     width: 3px;
     height: 40px;
-    background: #3498db;
-    background: linear-gradient(to bottom, #3498db, rgba(52, 152, 219, 0));
+    background: #798b97;
+    background: linear-gradient(to bottom, #798b97, rgba(52, 152, 219, 0));
     top: 100%;
     left: 303px
 }
@@ -470,7 +493,7 @@ footer {
     color: #fff;
     width: 50px;
     height: 50px;
-    background: #3498db;
+    background: #798b97;
     border-radius: 50%;
     float: left;
     z-index: 99;
@@ -583,12 +606,12 @@ footer {
 
 .project {
     position: relative;
-    width: 900px;
+    /* width: 900px; */
     margin: 0 auto 30px auto;
     overflow: hidden;
     background: #fff;
     border-radius: 4px;
-    height: 250px;
+    height: auto;
     transition: transform .2s;
 }
 
@@ -621,14 +644,13 @@ footer {
 .project-image {
     float: left;
     padding: 0;
-    height: 250px;
 }
 
 .project-info {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 300px;
+    /* position: absolute; */
+    /* top: 50%;
+    transform: translateY(-50%); */
+    /* margin-left: 300px; */
     padding: 15px
 }
 
@@ -686,7 +708,7 @@ footer {
 
 #contact {
     padding: 50px 15px;
-    background: #3498db;
+    background: #000;
     text-align: center
 }
 
@@ -706,11 +728,10 @@ footer {
     display: block;
     width: 100%;
     padding: 10px;
-    border-radius: 4px;
     border: none;
     margin-bottom: 10px;
-    background: #1d6fa5;
-    color: #fff;
+    background: #fff;
+    color: #000;
     transition: .5s ease all;
     -webkit-transition: .5s ease all;
     -moz-transition: .5s ease all;
@@ -720,30 +741,30 @@ footer {
 
 #contact-form input::-webkit-input-placeholder,
 #contact-form textarea::-webkit-input-placeholder {
-    color: #fff
+    color: #000
 }
 
 #contact-form input:-moz-placeholder,
 #contact-form textarea:-moz-placeholder {
-    color: #fff;
+    color: #000;
     opacity: 1
 }
 
 #contact-form input::-moz-placeholder,
 #contact-form textarea::-moz-placeholder {
-    color: #fff;
+    color: #000;
     opacity: 1
 }
 
 #contact-form input:-ms-input-placeholder,
 #contact-form textarea:-ms-input-placeholder {
-    color: #fff
+    color: #000
 }
 
 #contact-form input:focus,
 #contact-form textarea:focus {
     outline: none;
-    background: #16527a
+    background: rgb(236, 236, 236)
 }
 
 #contact-form textarea {
@@ -755,10 +776,9 @@ footer {
     display: block;
     width: 100%;
     background: #fff;
-    border-radius: 4px;
     padding: 5px 10px;
     border: none;
-    color: #3498db;
+    color: #000;
     font-weight: 700;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: .5s ease all;
@@ -903,9 +923,9 @@ footer {
     .education-block span {
         float: none
     }
-    .project-image {
+    /* .project-image {
         display: none
-    }
+    } */
     .project-info {
         position: relative;
         margin: 0;
@@ -931,5 +951,16 @@ footer {
     #lead-content a {
         font-size: 0.9em;
         padding: 5px 10px
+    }
+}
+@media only screen and (min-width: 992px) {
+    .project-info {
+        margin-top: 40px;
+    }
+    .project {
+        height: 250px;
+    }
+    .project-image {
+        height: 190px;
     }
 }
