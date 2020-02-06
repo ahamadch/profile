@@ -50,7 +50,9 @@
         <div id="lead-content">
             <h1>Ahamad CH</h1>
             <h2>Software Engineer</h2>
-            <a href="/profile/files/resume.pdf" class="btn-rounded-white" id="downloadBtn" download="AHAMAD_RESUME.pdf">Download Resume  <i class="fa fa-download v-middle" aria-hidden="true"></i></a>
+            <a href="/profile/files/resume.pdf" class="btn-rounded-white" id="downloadBtn" download="AHAMAD_RESUME.pdf">
+                Download Resume <i class="fa fa-download v-middle" id="dwn-btn" aria-hidden="true"></i>
+            </a>
         </div>
         <!-- End #lead-content -->
 
@@ -185,21 +187,43 @@
 
     <div id="skills">
         <h2 class="heading">My Stack of Languages/Technologies</h2>
-        
+
         <div class="row justify-content-md-center">
-            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/php.png" class="" alt="PHP" ><h4>PHP</h4></div>
-            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/laravel.svg"  class="svg" alt="Laravel" data-hover="#f72c1f"><h4>Laravel</h4></div>
-            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/html5.svg"  class="svg" alt="HTML" data-hover="#ea6227"><h4>HTML</h4></div>
-            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/js.svg"  class="svg" alt="JavaScript" data-hover="#f7d437"><h4>JavaScript</h4></div>
-            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/css.svg"  class="svg" alt="Css" data-hover="#119cd3"><h4>CSS</h4></div>
-            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/mysql.svg" class="svg" alt="MySql" data-hover="#055a87"><h4>MySql</h4></div>
-            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/jquery.svg"  class="" alt="jQuery"><h4>jQuery</h4></div>
-            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/lumen.svg" class="svg" alt="Lumen" data-hover="#e54537"><h4>Lumen</h4></div>
-            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/react.svg"  class="svg" alt="React" data-hover="#51bbd7"><h4>React</h4></div>
-            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/jira.svg"  class="svg" alt="Jira" data-hover="#197cf7"><h4>Jira</h4></div>
-            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/git.svg"  class="svg" alt="Git" data-hover="#e94e31"><h4>Git</h4></div>
+            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/php.png" class="" alt="PHP">
+                <h4>PHP</h4>
+            </div>
+            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/laravel.svg" class="svg" alt="Laravel" data-hover="#f72c1f">
+                <h4>Laravel</h4>
+            </div>
+            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/html5.svg" class="svg" alt="HTML" data-hover="#ea6227">
+                <h4>HTML</h4>
+            </div>
+            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/js.svg" class="svg" alt="JavaScript" data-hover="#f7d437">
+                <h4>JavaScript</h4>
+            </div>
+            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/css.svg" class="svg" alt="Css" data-hover="#119cd3">
+                <h4>CSS</h4>
+            </div>
+            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/mysql.svg" class="svg" alt="MySql" data-hover="#055a87">
+                <h4>MySql</h4>
+            </div>
+            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/jquery.svg" class="" alt="jQuery">
+                <h4>jQuery</h4>
+            </div>
+            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/lumen.svg" class="svg" alt="Lumen" data-hover="#e54537">
+                <h4>Lumen</h4>
+            </div>
+            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/react.svg" class="svg" alt="React" data-hover="#51bbd7">
+                <h4>React</h4>
+            </div>
+            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/jira.svg" class="svg" alt="Jira" data-hover="#197cf7">
+                <h4>Jira</h4>
+            </div>
+            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/git.svg" class="svg" alt="Git" data-hover="#e94e31">
+                <h4>Git</h4>
             </div>
         </div>
+    </div>
     </div>
 
     <div id="contact">
@@ -258,20 +282,23 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Advent+Pro|Cedarville+Cursive|Comfortaa|Kelly+Slab&display=swap" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
     <script src="js/scripts.min.js"></script>
     <script>
         $('.stack-item >img').mouseover(function() {
-            if($(this).hasClass('svg')) {
+            if ($(this).hasClass('svg')) {
                 var hoverColor = $(this).data('hover');
-                $(this).css({ fill: hoverColor });
-            }
-            else {
+                $(this).css({
+                    fill: hoverColor
+                });
+            } else {
                 $(this).addClass('invert');
             }
         });
-        
+
         $('.stack-item >img').mouseleave(function() {
-            if(!$(this).hasClass('svg')) {
+            if (!$(this).hasClass('svg')) {
                 $(this).removeClass('invert');
             }
         });

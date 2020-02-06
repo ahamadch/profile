@@ -73,7 +73,8 @@ header {
     animation-name: dropHeader;
     animation-iteration-count: 1;
     animation-timing-function: ease;
-    animation-duration: 0.75s
+    animation-duration: 0.75s;
+    background-color: #000;
 }
 
 header ul {
@@ -90,12 +91,21 @@ header li {
 header a {
     display: block;
     color: #fff;
-    padding: 15px
+    padding: 15px;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 19px;
 }
 
 header a:hover {
     color: #798b97;
     text-decoration: none;
+    font-size: 20px;
+    padding: 13px;
+    transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
 }
 
 header a:focus {
@@ -127,19 +137,19 @@ header.sticky {
     z-index: 20;
     padding: 0 7px;
     border-radius: 4px;
-    background: #fff
+    background: #000;
 }
 
 #mobile-menu-close {
     display: none;
     text-align: right;
     width: 100%;
-    background: #fff;
+    background: #000;
     font-size: 1.5em;
     padding-right: 15px;
     padding-top: 10px;
     cursor: pointer;
-    color: #798b97
+    color: #fff;
 }
 
 #mobile-menu-close span {
@@ -205,15 +215,15 @@ footer {
 }
 
 .svg {
-    filter: saturate(0) brightness(0) invert(0);             
+    filter: saturate(0) brightness(0) invert(0);
 }
 
 .invert {
-    filter: invert(0.5);             
+    filter: invert(0.5);
 }
 
-.stack-item > img.svg:hover {
-    filter: saturate(1) brightness(1) invert(0);  
+.stack-item>img.svg:hover {
+    filter: saturate(1) brightness(1) invert(0);
 }
 
 .stack-item img {
@@ -221,7 +231,7 @@ footer {
     margin-bottom: 30px;
 }
 
-.stack-item > h4 {
+.stack-item>h4 {
     font-weight: lighter;
 }
 
@@ -242,17 +252,15 @@ img {
     padding-right: 28px;
     border: 3px solid #fff;
     border-radius: 30px;
-    transition: .5s ease all;
-    -webkit-transition: .5s ease all;
-    -moz-transition: .5s ease all;
-    -ms-transition: .5s ease all;
-    -o-transition: .5s ease all;
+    transition: 1s ease all;
 }
 
 .btn-rounded-white:hover {
-    color: #000;
+    color: #005555;
+    transform: translateY(5px);
     background: #fff;
-    text-decoration: none
+    border-radius: 0px;
+    text-decoration: none;
 }
 
 .shadow {
@@ -304,7 +312,8 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center
+    text-align: center;
+    font-family: 'Advent Pro', sans-serif;
 }
 
 #lead-content h1,
@@ -316,16 +325,42 @@ img {
     color: #fff;
     font-weight: 900;
     font-size: 5em;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    line-height: 0.9em
+    letter-spacing: 0.06em;
+    line-height: 0.9em;
+    transition: 1s ease all;
+}
+
+#lead-content h1:hover {
+    transition: 1 ease all;
+    letter-spacing: 0.01em;
+    color: #497099;
+    transform: scale(1.1) translateY(5px);
+    animation-name: hover;
+    animation-duration: 3.5s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #lead-content h2 {
     color: #798b97;
     font-weight: 500;
     font-size: 2.25em;
-    margin-bottom: 15px
+    margin-bottom: 15px;
+    transition: 1s ease all;
+}
+
+#lead-content h2:hover {
+    transition: 1 ease all;
+    letter-spacing: 0.04em;
+    transform: translateY(2px);
+    animation-name: hover;
+    animation-duration: 3.5s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #lead-overlay {
@@ -365,7 +400,8 @@ img {
     margin: 0 auto;
 }
 
-#lead-down i, #to-top i {
+#lead-down i,
+#to-top i {
     animation: pulsate 1.5s ease;
     animation-iteration-count: infinite;
     padding-top: 5px
@@ -953,6 +989,7 @@ img {
         padding: 5px 10px
     }
 }
+
 @media only screen and (min-width: 992px) {
     .project-info {
         margin-top: 40px;
