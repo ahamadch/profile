@@ -51,9 +51,9 @@
             <h1>Ahamad CH</h1>
             <h2>Software Engineer</h2>
             <a href="/profile/files/resume.pdf" class="btn-rounded-white" id="downloadBtn" download="AHAMAD_RESUME.pdf">
-                Download Resume <i class="fa fa-download v-middle" id="dwn-btn" aria-hidden="true"></i>
-            </a>
-        </div>
+              Download Resume <i class="fa fa-download v-middle" id="dwn-btn" aria-hidden="true"></i>
+          </a>
+      </div>
         <!-- End #lead-content -->
 
         <div id="lead-overlay"></div>
@@ -189,51 +189,52 @@
         <h2 class="heading">My Stack of Languages/Technologies</h2>
 
         <div class="row justify-content-md-center">
-            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/php.png" class="" alt="PHP">
-                <h4>PHP</h4>
-            </div>
-            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/laravel.svg" class="svg" alt="Laravel" data-hover="#f72c1f">
-                <h4>Laravel</h4>
-            </div>
-            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/html5.svg" class="svg" alt="HTML" data-hover="#ea6227">
-                <h4>HTML</h4>
-            </div>
-            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/js.svg" class="svg" alt="JavaScript" data-hover="#f7d437">
-                <h4>JavaScript</h4>
-            </div>
-            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/css.svg" class="svg" alt="Css" data-hover="#119cd3">
-                <h4>CSS</h4>
-            </div>
-            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/mysql.svg" class="svg" alt="MySql" data-hover="#055a87">
-                <h4>MySql</h4>
-            </div>
-            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/jquery.svg" class="" alt="jQuery">
-                <h4>jQuery</h4>
-            </div>
-            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/lumen.svg" class="svg" alt="Lumen" data-hover="#e54537">
-                <h4>Lumen</h4>
-            </div>
-            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/react.svg" class="svg" alt="React" data-hover="#51bbd7">
-                <h4>React</h4>
-            </div>
-            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/jira.svg" class="svg" alt="Jira" data-hover="#197cf7">
-                <h4>Jira</h4>
-            </div>
-            <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/git.svg" class="svg" alt="Git" data-hover="#e94e31">
-                <h4>Git</h4>
-            </div>
+          <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/php.png" class="" alt="PHP">
+            <h4>PHP</h4>
+        </div>
+        <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/laravel.svg" class="svg" alt="Laravel" data-hover="#f72c1f">
+            <h4>Laravel</h4>
+        </div>
+        <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/html5.svg" class="svg" alt="HTML" data-hover="#ea6227">
+            <h4>HTML</h4>
+        </div>
+        <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/js.svg" class="svg" alt="JavaScript" data-hover="#f7d437">
+            <h4>JavaScript</h4>
+        </div>
+        <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/css.svg" class="svg" alt="Css" data-hover="#119cd3">
+            <h4>CSS</h4>
+        </div>
+        <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/mysql.svg" class="svg" alt="MySql" data-hover="#055a87">
+            <h4>MySql</h4>
+        </div>
+        <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/jquery.svg" class="" alt="jQuery">
+            <h4>jQuery</h4>
+        </div>
+        <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/lumen.svg" class="svg" alt="Lumen" data-hover="#e54537">
+            <h4>Lumen</h4>
+        </div>
+        <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/react.svg" class="svg" alt="React" data-hover="#51bbd7">
+            <h4>React</h4>
+        </div>
+        <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/jira.svg" class="svg" alt="Jira" data-hover="#197cf7">
+            <h4>Jira</h4>
+        </div>
+        <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/git.svg" class="svg" alt="Git" data-hover="#e94e31">
+            <h4>Git</h4>
         </div>
     </div>
-    </div>
+</div>
+</div>
 
     <div id="contact">
         <h2>Get in Touch</h2>
-        <div id="contact-form">
-            <form method="POST" action="https://formspree.io/email@email.com">
+        <div id="contact-form-div">
+            <form method="POST" id="contactForm" action="https://formspree.io/xwkonejj">
+                <p id="formStatus"></p>
                 <input type="hidden" name="_subject" value="Contact request from personal website" />
                 <input type="email" name="_replyto" placeholder="Your email" required>
                 <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
+                <button id="submitBtn" type="submit">Send</button>
             </form>
         </div>
         <!-- End #contact-form -->
@@ -286,6 +287,54 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
     <script src="js/scripts.min.js"></script>
     <script>
+        $(window).load(function() {
+          // get the form elements defined in your form HTML above
+          var form = document.getElementById("contactForm");
+          var button = $("#submitBtn");
+          var status = $("#formStatus");
+
+          // Success and Error functions for after the form is submitted
+          function success() {
+            var successMessage = 'Thanks for reaching out. Have a splendid day!'
+            button.fadeOut(2000);
+            form.reset();
+            status.addClass('success');
+            status.html(successMessage);
+          }
+
+          function error() {
+            var errorMessage = 'Oops! There was a problem. Please try again later';
+            button.fadeOut(2000);
+            form.reset();
+            status.addClass('error');
+            status.html(errorMessage);
+          }
+
+          // handle the form submission event
+          form.addEventListener("submit", function(ev) {
+            ev.preventDefault();
+            var data = new FormData(form);
+            ajax(form.method, form.action, data, success, error);
+          });
+        });
+
+        // helper function for sending an AJAX request
+        function ajax(method, url, data, success, error) {
+          var xhr = new XMLHttpRequest();
+          xhr.open(method, url);
+          xhr.setRequestHeader("Accept", "application/json");
+          xhr.onreadystatechange = function() {
+            if (xhr.readyState !== XMLHttpRequest.DONE) return;
+            if (xhr.status === 200) {
+              success(xhr.response, xhr.responseType);
+            }
+            else {
+              error(xhr.status, xhr.response, xhr.responseType);
+            }
+          };
+          xhr.send(data);
+        }
+
         $('.stack-item >img').mouseover(function() {
             if ($(this).hasClass('svg')) {
                 var hoverColor = $(this).data('hover');

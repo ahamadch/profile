@@ -754,20 +754,23 @@ img {
     font-weight: 500
 }
 
-#contact-form {
+#contact-form-div {
     max-width: 500px;
     margin: 0 auto
 }
 
-#contact-form input,
-#contact-form textarea {
+#contact-form-div input,
+#contact-form-div textarea {
     display: block;
     width: 100%;
     padding: 10px;
-    border: none;
+    border: 1px solid
+    white;
     margin-bottom: 10px;
-    background: #fff;
-    color: #000;
+    background:
+    #000;
+    color:
+    #fff;
     transition: .5s ease all;
     -webkit-transition: .5s ease all;
     -moz-transition: .5s ease all;
@@ -775,47 +778,46 @@ img {
     -o-transition: .5s ease all;
 }
 
-#contact-form input::-webkit-input-placeholder,
-#contact-form textarea::-webkit-input-placeholder {
-    color: #000
+#contact-form-div input::-webkit-input-placeholder,
+#contact-form-div textarea::-webkit-input-placeholder {
+    color: #fff
 }
 
-#contact-form input:-moz-placeholder,
-#contact-form textarea:-moz-placeholder {
-    color: #000;
+#contact-form-div input:-moz-placeholder,
+#contact-form-div textarea:-moz-placeholder {
+    color: #fff;
     opacity: 1
 }
 
-#contact-form input::-moz-placeholder,
-#contact-form textarea::-moz-placeholder {
-    color: #000;
+#contact-form-div input::-moz-placeholder,
+#contact-form-div textarea::-moz-placeholder {
+    color: #fff;
     opacity: 1
 }
 
-#contact-form input:-ms-input-placeholder,
-#contact-form textarea:-ms-input-placeholder {
-    color: #000
+#contact-form-div input:-ms-input-placeholder,
+#contact-form-div textarea:-ms-input-placeholder {
+    color: #fff
 }
 
-#contact-form input:focus,
-#contact-form textarea:focus {
+#contact-form-div input:focus,
+#contact-form-div textarea:focus {
     outline: none;
-    background: rgb(236, 236, 236)
+    background: 000
 }
 
-#contact-form textarea {
+#contact-form-div textarea {
     height: 150px;
     resize: none
 }
 
-#contact-form button {
+#contact-form-div button {
     display: block;
-    width: 100%;
-    background: #fff;
+    width: 100%;background:
+    #000;
     padding: 5px 10px;
-    border: none;
-    color: #000;
-    font-weight: 700;
+    border: 1px solid white;
+    color:#fff;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: .5s ease all;
     -webkit-transition: .5s ease all;
@@ -824,8 +826,18 @@ img {
     -o-transition: .5s ease all;
 }
 
-#contact-form button:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)
+#contact-form-div button:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    transform: translateY(5px);
+    transition: .5s ease all;
+}
+
+#contact-form-div #formStatus.success {
+    color: teal;
+}
+
+#contact-form-div #formStatus.error {
+    color: maroon;
 }
 
 .optional-section {
