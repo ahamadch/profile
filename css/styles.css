@@ -216,14 +216,17 @@ footer {
 
 .svg {
     filter: saturate(0) brightness(0) invert(0);
+    transition: 0.4s ease all;
 }
 
 .invert {
     filter: invert(0.5);
+    transition: 0.4s ease all;
 }
 
 .stack-item>img.svg:hover {
     filter: saturate(1) brightness(1) invert(0);
+    transition: 0.4s ease all;
 }
 
 .stack-item img {
