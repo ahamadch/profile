@@ -253,6 +253,31 @@ img {
     border: 3px solid #fff;
     border-radius: 30px;
     transition: 1s ease all;
+    animation: shake 20s infinite;
+    animation-duration: 10s;
+    animation-delay: 3s;
+}
+
+@keyframes shake {
+    0%, 10% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    1%, 9% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    2%, 8% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    3%, 5%, 7% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    4%, 6% {
+        transform: translate3d(4px, 0, 0);
+    }
 }
 
 .btn-rounded-white:hover {
