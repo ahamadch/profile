@@ -18,31 +18,51 @@
     <div id="mobile-menu-open" class="shadow-large">
         <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">
+          &nbsp;
+        </span>
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+
+    <div class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item"><span data-nav="about" class="navigation__link">About</a></li>
+          <li class="navigation__item"><span data-nav="experience" class="navigation__link">Experience</a></li>
+          <li class="navigation__item"><span data-nav="education" class="navigation__link">Education</a></li>
+          <li class="navigation__item"><span data-nav="projects" class="navigation__link">Projects</a></li>
+          <li class="navigation__item"><span data-nav="skills" class="navigation__link">Skills</a></li>
+          <li class="navigation__item"><span data-nav="contact" class="navigation__link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
     <!-- End #mobile-menu-toggle -->
     <header>
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <ul id="menu" class="shadow">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
+      <div id="mobile-menu-close">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+      <ul id="menu" class="shadow">
+        <li>
+          <a href="#about" id="nav-about">About</a>
+        </li>
+        <li>
+          <a href="#experience" id="nav-experience">Experience</a>
+        </li>
+        <li>
+          <a href="#education" id="nav-education">Education</a>
+        </li>
+        <li>
+          <a href="#projects" id="nav-projects">Projects</a>
+        </li>
+        <li>
+          <a href="#skills" id="nav-skills">Skills</a>
+        </li>
+        <li>
+          <a href="#contact" id="nav-contact">Contact</a>
+        </li>
+      </ul>
     </header>
     <!-- End header -->
 
@@ -67,14 +87,14 @@
     </div>
     <!-- End #lead -->
 
-    <div id="about">
+    <div id="about" class="section">
         <div class="container">
-            <div class="row">
+            <div class="row about-me-section">
                 <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
+                  <h2 class="heading heading-white">About Me</h2>
                 </div>
                 <div class="col-md-8">
-                    <p>
+                    <p class="light-text">
                         Solution-driven professional excelling in a highly collaborative work environment, finding solutions to challenges and focused on customer satisfaction. Proven experience developing consumer-focused web sites using PHP, Laravel, HTML, CSS, JQuery, and
                         JavaScript. Responding to challenges by designing and developing solutions and building web applications aligned to customer services. Translating solutions into code and working across many different APIs, third-party integrations
                         and databases.
@@ -85,8 +105,8 @@
     </div>
     <!-- End #about -->
 
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
+    <div id="experience" class="background-alt section">
+        <h2 class="heading heading-black">Experience</h2>
         <div id="experience-timeline">
             <div data-date="October 2017 – Present">
                 <h3>Axel Technologies Pvt Ltd</h3>
@@ -118,27 +138,61 @@
     </div>
     <!-- End #experience -->
 
-    <!-- <div id="education">
-        <h2 class="heading">Education</h2>
+    <div id="education" class="section">
+        <h2 class="heading heading-white">Education</h2>
         <div class="education-block">
             <h3>CMS College of Engineering & Technology</h3>
             <span class="education-date">March 2013 - May 2017</span>
             <h4>Anna University</h4>
             <h4>Bachelor of Engineeering in Computer Science and Engneering</h4>
-            <p>
-
-            </p>
         </div>
-    </div> -->
+
+        <h2 class="heading heading-white">Certifications</h2>
+        <div class="certifications-block">
+          <div class="certification-item">
+            <img src="images/react-complete-guide.jpg" class="certification-img" alt="React - The Complete Guide"/>
+            <img src="images/udemy.png" class="udemy-img" alt="Udemy"/>
+            <div class="certification-desc">
+              <h3 class="cerification-title">
+                React - The Complete Guide (incl Hooks, React Router, Redux)
+              </h3>
+              <p class="course-author">By Maximilian Schwarzmüller</p>
+              <a class="button modal-pop-btn" data-img="images/react-certificate.jpg">View</a>
+            </div>
+          </div>
+          <div class="certification-item">
+            <img src="images/advanced-css.jpg" class="certification-img" alt="Advanced CSS and Sass" />
+            <img src="images/udemy.png" class="udemy-img" alt="Udemy" />
+            <div class="certification-desc">
+              <h3 class="cerification-title">
+                Advanced CSS and Sass: Flexbox, Grid, Animations and More!
+              </h3>
+              <p class="course-author">By Jonas Schmedtmann</p>
+              <a class="button modal-pop-btn" data-img="images/advanced-css-certificate.jpg">View</a>
+            </div>
+          </div>
+          <div class="certification-item">
+            <img src="images/mern-stack.jpg" class="certification-img" alt="MERN Stack Front To Back" />
+            <img src="images/udemy.png" class="udemy-img" alt="Udemy" />
+            <div class="certification-desc">
+              <h3 class="cerification-title">
+                MERN Stack Front To Back: Full Stack React, Redux & Node.js
+              </h3>
+              <p class="course-author">By Brad Traversy</p>
+              <p class="button learning-text">Learning...</p>
+            </div>
+          </div>
+        </div>
+    </div>
     <!-- End #education -->
 
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
+    <div id="projects" class="background-alt section">
+        <h2 class="heading heading-black">Projects</h2>
         <div class="container">
             <div class="row">
                 <div class="project shadow-large">
                     <div class="col-xs-12 col-md-4 project-image  project-image-1">
-                        <img src="files/hvac-logo.png" />
+                        <img src="files/p3.png" />
                     </div>
                     <!-- End .project-image -->
                     <div class="col-xs-12 col-md-8 project-info">
@@ -160,7 +214,7 @@
                     <div class="col-xs-12 col-md-8 project-info">
                         <h3>Right Logistics</h3>
                         <p>Right Logistics Pvt. Ltd. is a privately owned Independent freight forwarder with the concept of providing our customers with a comprehensive partnership, to enhance every aspect of their Forwarding requirement. </p>
-                        <a href="http://www.rightlogistics.com">View Project</a>
+                        <a href="http://www.rightlogistics.com" class="view-btn">View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -175,7 +229,7 @@
                         <p>Blugate is an online app used to create virtual addresses to shop and deliver products which provides a full suite of retail logistics services, from warehousing and inventory management to order fulfilment to last-mile delivery.
                             It uses a token system for Parcel Management which uses separate admin and user modules for processing. This application is implemented with Payment Gateway integration for Token Purchase, Map integration for bluPort locations
                             and Admin module for managing Parcels, Plans and Promo Codes.</p>
-                        <a href="http://blu.com.sg">View Project</a>
+                        <a href="http://blu.com.sg" class="view-btn">View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -185,12 +239,15 @@
     </div>
     <!-- End #projects -->
 
-    <div id="skills">
-        <h2 class="heading">My Stack of Languages/Technologies</h2>
+    <div id="skills" class="section">
+      <h2 class="heading heading-white">My Stack of Languages/Technologies</h2>
 
-        <div class="row justify-content-md-center">
-          <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/php.png" class="" alt="PHP">
-            <h4>PHP</h4>
+      <div class="row justify-content-md-center">
+        <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/react.svg" class="svg" alt="React" data-hover="#51bbd7">
+          <h4>React</h4>
+        </div>
+        <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/php.png" class="invert noHover" alt="PHP">
+          <h4>PHP</h4>
         </div>
         <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/laravel.svg" class="svg" alt="Laravel" data-hover="#f72c1f">
             <h4>Laravel</h4>
@@ -207,14 +264,11 @@
         <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/mysql.svg" class="svg" alt="MySql" data-hover="#055a87">
             <h4>MySql</h4>
         </div>
-        <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/jquery.svg" class="" alt="jQuery">
+        <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/jquery.svg" class="invert noHover" alt="jQuery">
             <h4>jQuery</h4>
         </div>
         <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/lumen.svg" class="svg" alt="Lumen" data-hover="#e54537">
             <h4>Lumen</h4>
-        </div>
-        <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/react.svg" class="svg" alt="React" data-hover="#51bbd7">
-            <h4>React</h4>
         </div>
         <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/jira.svg" class="svg" alt="Jira" data-hover="#197cf7">
             <h4>Jira</h4>
@@ -222,12 +276,12 @@
         <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/git.svg" class="svg" alt="Git" data-hover="#e94e31">
             <h4>Git</h4>
         </div>
+      </div>
     </div>
 </div>
-</div>
 
-    <div id="contact">
-        <h2>Get in Touch</h2>
+    <div id="contact" class="section">
+        <h2 class="heading heading-black">Let's Talk</h2>
         <div id="contact-form-div">
             <form method="POST" id="contactForm" action="https://formspree.io/xwkonejj">
                 <p id="formStatus"></p>
@@ -240,13 +294,21 @@
         <!-- End #contact-form -->
     </div>
     <!-- End #contact -->
+    <div id="popup1" class="overlay">
+      <div class="popup">
+        <a class="close" href="javascript:void(0)">&times;</a>
+        <div class="content">
+          <img src="" id="certificateImg" />
+        </div>
+      </div>
+    </div>
 
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-sm-5 copyright">
                     <p>
-                        Copyright &copy; 2019 Ahamad CH. All Rights Reserved.
+                      Copyright &copy; 2020 Ahamad CH. All Rights Reserved.
                     </p>
                 </div>
                 <div class="col-sm-2 top">
@@ -264,6 +326,9 @@
                         </li>
                         <li>
                             <a href="https://www.linkedin.com/in/ahamadch" target="_blank"><i class="fa fa-linkedin icon" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                          <a href="https://www.instagram.com/sham_ahamad" target="_blank"><i class="fa fa-instagram icon" aria-hidden="true"></i></a>
                         </li>
                         <!-- <li>
                             <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -336,7 +401,7 @@
         }
 
         $('.stack-item >img').mouseover(function() {
-            if ($(this).hasClass('svg')) {
+            if ($(this).hasClass('noHover')) {
                 var hoverColor = $(this).data('hover');
                 $(this).css({
                     fill: hoverColor
@@ -347,7 +412,7 @@
         });
 
         $('.stack-item >img').mouseleave(function() {
-            if (!$(this).hasClass('svg')) {
+            if (!$(this).hasClass('noHover')) {
                 $(this).removeClass('invert');
             }
         });
@@ -360,6 +425,29 @@
         $('.vtimeline-content').on('mouseout', function() {
             $(this).parent().find('.vtimeline-date').removeClass('vtimeline-date-transform');
             $(this).parent().parent().find('.vtimeline-icon').find('i').removeClass('vtimeline-i-transform');
+        });
+
+        $('.close').on('click', function() {
+          $('.overlay').css({
+            visibility: 'hidden',
+            opacity: 0
+          });
+        });
+
+        $('.modal-pop-btn').on('click', function () {
+          var certificateImg = $(this).data('img');
+
+          $('#certificateImg').attr('src', certificateImg);
+          $('.overlay').css({
+            visibility: 'visible',
+            opacity: 1
+          });
+        });
+
+        $('.navigation__link').on('click', function() {
+            var navItem = $(this).data('nav');
+            $('#nav-' + navItem).click();
+            $('.navigation__icon').click();
         });
     </script>
 </body>
