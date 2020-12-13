@@ -69,7 +69,7 @@
     <div id="lead">
         <div id="lead-content">
             <h1>Ahamad CH</h1>
-            <h2>Software Engineer</h2>
+            <h2 id="roles"></h2>
             <a href="/files/resume.pdf" class="btn-rounded-white" id="downloadBtn" download="AHAMAD_RESUME.pdf">
               Download Resume <i class="fa fa-download v-middle" id="dwn-btn" aria-hidden="true"></i>
           </a>
@@ -97,7 +97,8 @@
                     <p class="light-text">
                         Solution-driven professional excelling in a highly collaborative work environment, finding solutions to challenges and focused on customer satisfaction. Proven experience developing consumer-focused web sites using PHP, Laravel, HTML, CSS, JQuery, and
                         JavaScript. Responding to challenges by designing and developing solutions and building web applications aligned to customer services. Translating solutions into code and working across many different APIs, third-party integrations
-                        and databases.
+                        and databases.<br>
+                        I'm now learning Frontend Web Development and getting hands-on experience with technologies like React JS, Node JS, MongoDB, Express and Sass and, enhancing my skills.
                     </p>
                 </div>
             </div>
@@ -192,7 +193,7 @@
             <div class="row">
                 <div class="project shadow-large">
                     <div class="col-xs-12 col-md-4 project-image  project-image-1">
-                        <img src="files/p3.png" />
+                        <img src="images/p3.png">
                     </div>
                     <!-- End .project-image -->
                     <div class="col-xs-12 col-md-8 project-info">
@@ -208,7 +209,7 @@
 
                 <div class="project shadow-large">
                     <div class="col-xs-12 col-md-4 project-image  project-image-2">
-                        <img src="files/rl-logo.png" />
+                        <img src="images/rl-logo.png" />
                     </div>
                     <!-- End .project-image -->
                     <div class="col-xs-12 col-md-8 project-info">
@@ -221,7 +222,7 @@
 
                 <div class="project shadow-large">
                     <div class="col-xs-12 col-md-4 project-image  project-image-3 ">
-                        <img src="files/blu-logo.png" />
+                        <img src="images/blu-logo.png" />
                     </div>
                     <!-- End .project-image -->
                     <div class="col-xs-12 col-md-8 project-info">
@@ -242,39 +243,57 @@
     <div id="skills" class="section">
       <h2 class="heading heading-white">My Stack of Languages/Technologies</h2>
 
-      <div class="row justify-content-md-center">
-        <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/react.svg" class="svg" alt="React" data-hover="#51bbd7">
+      <div class="row justify-content-md-center" id="stack-container">
+        <div class="stack-item col-md3 col-sm4 col6"><img src="images/react.svg" class="svg" alt="React" data-hover="#51bbd7">
           <h4>React</h4>
         </div>
-        <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/php.png" class="invert noHover" alt="PHP">
+        <div class="stack-item col-md3 col-sm4 col6"><img src="images/nodejs.svg" class="svg" alt="Nodejs">
+          <h4>Node js</h4>
+        </div>
+        <div class="stack-item col-md3 col-sm4 col6"><img src="images/mongodb.svg" class="svg" alt="MongoDB">
+          <h4>MongoDB</h4>
+        </div>
+        <div class="stack-item col-md3 col-sm4 col6"><img src="images/expressjs.svg" class="svg-light" alt="Express">
+          <h4>Express</h4>
+        </div>
+        <div class="stack-item col-md3 col-sm4 col6"><img src="images/sass.svg" class="svg" alt="Sass">
+          <h4>Sass</h4>
+        </div>
+        <div class="stack-item col-md3 col-sm4 col6"><img src="images/php.svg" class="svg" alt="PHP">
           <h4>PHP</h4>
         </div>
-        <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/laravel.svg" class="svg" alt="Laravel" data-hover="#f72c1f">
+        <div class="stack-item col-md3 col-sm4 col6"><img src="images/laravel.svg" class="svg" alt="Laravel" data-hover="#f72c1f">
             <h4>Laravel</h4>
         </div>
-        <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/html5.svg" class="svg" alt="HTML" data-hover="#ea6227">
+        <div class="stack-item col-md3 col-sm4 col6"><img src="images/html5.svg" class="svg" alt="HTML" data-hover="#ea6227">
             <h4>HTML</h4>
         </div>
-        <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/js.svg" class="svg" alt="JavaScript" data-hover="#f7d437">
+        <div class="stack-item col-md3 col-sm4 col6"><img src="images/js.svg" class="svg" alt="JavaScript" data-hover="#f7d437">
             <h4>JavaScript</h4>
         </div>
-        <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/css.svg" class="svg" alt="Css" data-hover="#119cd3">
+        <div class="stack-item col-md3 col-sm4 col6"><img src="images/jquery.svg" class="svg" alt="jQuery">
+          <h4>jQuery</h4>
+        </div>
+        <div class="stack-item col-md3 col-sm4 col6"><img src="images/css.svg" class="svg" alt="Css" data-hover="#119cd3">
             <h4>CSS</h4>
         </div>
-        <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/mysql.svg" class="svg" alt="MySql" data-hover="#055a87">
+        <div class="stack-item col-md3 col-sm4 col6"><img src="images/bootstrap.svg" class="svg" alt="Bootstrap">
+          <h4>Bootstrap</h4>
+        </div>
+        <div class="stack-item col-md3 col-sm4 col6"><img src="images/mysql.svg" class="svg" alt="MySql" data-hover="#055a87">
             <h4>MySql</h4>
         </div>
-        <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/jquery.svg" class="invert noHover" alt="jQuery">
-            <h4>jQuery</h4>
-        </div>
-        <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/lumen.svg" class="svg" alt="Lumen" data-hover="#e54537">
+        <div class="stack-item col-md3 col-sm4 col6"><img src="images/lumen.svg" class="svg" alt="Lumen" data-hover="#e54537">
             <h4>Lumen</h4>
         </div>
-        <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/jira.svg" class="svg" alt="Jira" data-hover="#197cf7">
+        <div class="stack-item col-md3 col-sm4 col6"><img src="images/jira.svg" class="svg" alt="Jira" data-hover="#197cf7">
             <h4>Jira</h4>
         </div>
-        <div class="stack-item col-md-3 col-sm-4 col-6"><img src="images/git.svg" class="svg" alt="Git" data-hover="#e94e31">
+        <div class="stack-item col-md3 col-sm4 col6"><img src="images/git.svg" class="svg" alt="Git" data-hover="#e94e31">
             <h4>Git</h4>
+        </div>
+        <div class="stack-item col-md3 col-sm4 col6"><img src="images/vscode.svg" class="svg" alt="VS Code">
+          <h4>VS Code</h4>
         </div>
       </div>
     </div>
@@ -351,12 +370,28 @@
     <link href="https://fonts.googleapis.com/css?family=Advent+Pro|Cedarville+Cursive|Comfortaa|Kelly+Slab&display=swap" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
     <script src="js/scripts.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script> -->
+    <script src="js/typeit.min.js"></script>
     <script>
         $(window).load(function() {
           // get the form elements defined in your form HTML above
           var form = document.getElementById("contactForm");
           var button = $("#submitBtn");
           var status = $("#formStatus");
+          new TypeIt("#roles", {
+            strings: [
+              "Software Engineer",
+              "Frontend Developer",
+              "Learner",
+              "Technology Enthusiast",
+            ],
+            speed: 75,
+            loop: true,
+            nextStringDelay: 1000,
+            beforeString: async (step, instance) => {
+              instance.reset();
+            },
+          }).go();
 
           // Success and Error functions for after the form is submitted
           function success() {
