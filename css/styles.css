@@ -150,7 +150,7 @@ body.active {
 }
 
 .navigation__checkbox:checked ~ .navigation__background {
-  transform: scale(80);
+  transform: scale(90);
 }
 
 .navigation__checkbox:checked ~ .navigation__nav {
@@ -371,22 +371,87 @@ footer {
     transition: 0.4s ease all;
 }
 
+#stack-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 250px;
+}
+
+@media only screen and (max-width: 1200px) {
+    #stack-container {
+        padding: 0 200px !important;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #stack-container {
+        padding: 0 150px !important;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #stack-container {
+        padding: 0 100px !important;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #stack-container {
+        padding: 0 50px !important;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #stack-container {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #stack-container {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .heading {
+        font-size: 25px !important;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #stack-container {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+#stack-container::before {
+    content: none;
+}
+
 .stack-item > img.png {
     filter: invert(0.5);
 }
 
-.stack-item > img.svg {
+.stack-item > img.svg,
+.stack-item:hover > img.svg-light {
     filter: saturate(0) brightness(1) invert(1);
 }
 
-.stack-item>img.svg:hover {
+.stack-item > img.svg-light {
+    filter: saturate(0) brightness(1) invert(.5);
+}
+
+.stack-item:hover > img.svg {
     filter: saturate(1) brightness(1) invert(0);
     transition: .2s ease all;
 }
 
+.stack-item:hover > h4 {
+    color: #fff !important;
+}
+
 .stack-item img {
     max-height: 50px;
-    margin-bottom: 30px;
+    max-width: 125px;
 }
 
 .stack-item>h4 {
@@ -399,6 +464,7 @@ img {
 
 .stack-item {
     margin-bottom: 50px;
+    height: 100px;
 }
 
 .btn-rounded-white {
@@ -414,6 +480,10 @@ img {
     animation: shake 20s infinite;
     animation-duration: 10s;
     animation-delay: 3s;
+}
+
+.btn-rounded-white:hover {
+    color: #fff;
 }
 
 @keyframes shake {
@@ -463,7 +533,7 @@ img {
 .heading {
     position: relative;
     display: inline-block;
-    font-size: 2em;
+    font-size: 30px;
     font-weight: 300;
     margin: 0 0 30px 0;
     color: #fff;
@@ -502,7 +572,6 @@ img {
 }
 
 .background-alt {
-    /* background: #313162 */
     background: linear-gradient(90deg, rgb(41, 39, 83) 0%, rgb(38, 38, 87) 35%, rgb(52, 51, 96) 100%);
 }
 
@@ -511,7 +580,7 @@ img {
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: url(../images/lead-bg.jpg);
+    background: url(../images/bg2.jpg);
     background-size: cover;
     padding: 15px;
     overflow: hidden
@@ -535,17 +604,18 @@ img {
 #lead-content h1 {
     color: #fff;
     font-weight: 900;
-    font-size: 5em;
+    font-size: 100px;
     letter-spacing: 0.06em;
     line-height: 0.9em;
-    transition: 1s ease all;
+    transition: .8s ease all;
+    color: #497099;
 }
 
 #lead-content h1:hover {
     transition: 1 ease all;
     letter-spacing: 0.01em;
-    color: #497099;
-    transform: scale(1.1) translateY(5px);
+    color: #255c97;
+    transform: scale(1.1) translateY(-15px);
     animation-name: hover;
     animation-duration: 3.5s;
     animation-delay: 1s;
