@@ -852,7 +852,7 @@ img {
     left: 0;
     top: 10px;
     font-weight: 300;
-    color: #000;
+    color: #fff;
     transition: transform .2s ease-in-out;
     -webkit-transition: transform .2s ease-in-out;
     -moz-transition: transform .2s ease-in-out;
@@ -861,7 +861,7 @@ img {
 }
 
 .vtimeline-date-transform {
-    color: #000;
+    color: #fff;
 }
 
 .education-block {
@@ -876,7 +876,7 @@ img {
     font-weight: 500;
     float: left;
     margin: 0;
-    color: #374054
+    color: #dcd9d9
 }
 
 .education-block span {
@@ -978,6 +978,7 @@ img {
 
 .project-image-1>img {
     width: 240px;
+    border-radius: 10px;
 }
 
 .project-image-2>img {
